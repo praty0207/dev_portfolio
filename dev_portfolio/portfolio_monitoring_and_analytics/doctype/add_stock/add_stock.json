@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date_of_purchase}-{company_code}-{quantity}-{price_of_buying_in_paisa}",
+ "creation": "2023-10-17 19:37:17.405071",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "column_break_yfiq",
+  "isin",
+  "section_break_quxd",
+  "quantity",
+  "column_break_oets",
+  "price_of_buying",
+  "column_break_sjfm",
+  "investment",
+  "column_break_lfln",
+  "date_of_purchase",
+  "currency",
+  "price_of_buying_in_paisa",
+  "transaction_name",
+  "company_code"
+ ],
+ "fields": [
+  {
+   "fetch_from": "company_code.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "isin",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ISIN"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "price_of_buying",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price of buying",
+   "options": "currency",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "investment",
+   "fieldtype": "Currency",
+   "label": "Investment",
+   "options": "currency",
+   "precision": "2"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_purchase",
+   "fieldtype": "Date",
+   "label": "Date of purchase"
+  },
+  {
+   "fieldname": "column_break_yfiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_quxd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oets",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sjfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lfln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "INR",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "default": "price_of_buying*100",
+   "fieldname": "price_of_buying_in_paisa",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "price of buying in paisa",
+   "precision": "0",
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "self.name",
+   "fieldname": "transaction_name",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Transaction Name"
+  },
+  {
+   "fetch_from": "company_name.company_code",
+   "fieldname": "company_code",
+   "fieldtype": "Read Only",
+   "label": "Company Code",
+   "options": "Company",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-05 01:29:34.029929",
+ "modified_by": "Administrator",
+ "module": "Portfolio Monitoring and Analytics",
+ "name": "Add Stock",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_code"
+}

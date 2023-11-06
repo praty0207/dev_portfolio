@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dev_portfolio *.css
+recursive-include dev_portfolio *.csv
+recursive-include dev_portfolio *.html
+recursive-include dev_portfolio *.ico
+recursive-include dev_portfolio *.js
+recursive-include dev_portfolio *.json
+recursive-include dev_portfolio *.md
+recursive-include dev_portfolio *.png
+recursive-include dev_portfolio *.py
+recursive-include dev_portfolio *.svg
+recursive-include dev_portfolio *.txt
+recursive-exclude dev_portfolio *.pyc

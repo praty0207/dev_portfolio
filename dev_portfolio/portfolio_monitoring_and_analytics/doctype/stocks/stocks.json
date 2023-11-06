@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company_code",
+ "creation": "2023-10-24 20:10:13.359054",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "cumulative_quantity",
+  "average_price_of_buying",
+  "total_invested",
+  "first_date_of_buying",
+  "average_price_of_1_sigma_quanity",
+  "company_code",
+  "day_closing_price",
+  "number_of_transactions"
+ ],
+ "fields": [
+  {
+   "fetch_from": "company_code.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Read Only",
+   "label": "Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "cumulative_quantity",
+   "fieldtype": "Int",
+   "label": "Cumulative Quantity"
+  },
+  {
+   "fieldname": "average_price_of_buying",
+   "fieldtype": "Currency",
+   "label": "Average Price of Buying"
+  },
+  {
+   "fieldname": "total_invested",
+   "fieldtype": "Currency",
+   "label": "Total invested"
+  },
+  {
+   "fieldname": "first_date_of_buying",
+   "fieldtype": "Data",
+   "label": "First Date of Buying"
+  },
+  {
+   "fieldname": "average_price_of_1_sigma_quanity",
+   "fieldtype": "Currency",
+   "label": "Average Price of 1 Sigma Quanity"
+  },
+  {
+   "fieldname": "company_code",
+   "fieldtype": "Link",
+   "label": "Company Code",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "fetch_from": "company_code.day_closing_price",
+   "fieldname": "day_closing_price",
+   "fieldtype": "Read Only",
+   "label": "Day Closing Price",
+   "options": "Company"
+  },
+  {
+   "fieldname": "number_of_transactions",
+   "fieldtype": "Int",
+   "label": "Number of transactions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-05 01:43:26.211799",
+ "modified_by": "Administrator",
+ "module": "Portfolio Monitoring and Analytics",
+ "name": "Stocks",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

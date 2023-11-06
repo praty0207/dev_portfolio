@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-10-07 13:49:48.992616",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "volume_section",
+  "column_break_qhvx",
+  "year",
+  "volume",
+  "jan",
+  "column_break_ooqt",
+  "feb",
+  "column_break_mwyj",
+  "mar",
+  "column_break_vjlt",
+  "apr",
+  "column_break_jhqb",
+  "may",
+  "column_break_szek",
+  "jun",
+  "column_break_fypm",
+  "jul",
+  "column_break_nmcy",
+  "aug",
+  "column_break_luwl",
+  "sep",
+  "column_break_bpyc",
+  "oct",
+  "column_break_banv",
+  "nov",
+  "column_break_ykwf",
+  "dec",
+  "yr_total_column"
+ ],
+ "fields": [
+  {
+   "fieldname": "jan",
+   "fieldtype": "Int",
+   "label": "Jan",
+   "non_negative": 1,
+   "width": "70px"
+  },
+  {
+   "fieldname": "feb",
+   "fieldtype": "Int",
+   "label": "Feb"
+  },
+  {
+   "fieldname": "mar",
+   "fieldtype": "Int",
+   "label": "Mar"
+  },
+  {
+   "fieldname": "apr",
+   "fieldtype": "Int",
+   "label": "Apr"
+  },
+  {
+   "fieldname": "may",
+   "fieldtype": "Int",
+   "label": "May"
+  },
+  {
+   "fieldname": "jun",
+   "fieldtype": "Int",
+   "label": "Jun"
+  },
+  {
+   "fieldname": "jul",
+   "fieldtype": "Int",
+   "label": "Jul"
+  },
+  {
+   "fieldname": "aug",
+   "fieldtype": "Int",
+   "label": "Aug"
+  },
+  {
+   "fieldname": "sep",
+   "fieldtype": "Int",
+   "label": "Sep"
+  },
+  {
+   "fieldname": "oct",
+   "fieldtype": "Int",
+   "label": "Oct"
+  },
+  {
+   "fieldname": "nov",
+   "fieldtype": "Int",
+   "label": "Nov"
+  },
+  {
+   "fieldname": "dec",
+   "fieldtype": "Int",
+   "label": "Dec"
+  },
+  {
+   "columns": 14,
+   "fieldname": "volume_section",
+   "fieldtype": "Section Break",
+   "label": "Volume",
+   "width": "70"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "width": "80"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ooqt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mwyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vjlt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jhqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_szek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fypm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nmcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_luwl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bpyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_banv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ykwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yr_total_column",
+   "fieldtype": "Column Break",
+   "label": "Yr Total"
+  },
+  {
+   "fieldname": "column_break_qhvx",
+   "fieldtype": "Column Break",
+   "width": "80"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-07 14:45:46.721817",
+ "modified_by": "Administrator",
+ "module": "Portfolio Monitoring and Analytics",
+ "name": "Test DocType",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
